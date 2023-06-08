@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-import sys
-
-def main():
+if __name__ == "__main__":
+    import sys
     if len(sys.argv) < 2:
         print("0 arguments.")
 
@@ -15,6 +14,3 @@ def main():
             if arg == sys.argv[0]:
                 continue
             print(index, ": ", arg, sep="")
-
-if __name__ == "__main__":
-    main()

@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-import sys
-
-def main():
+if __name__ == "__main__":
+    import sys
     sum = 0
     if len(sys.argv) < 2:
         print(sum)
@@ -16,6 +15,3 @@ def main():
                 continue
             sum += int(arg)
         print(sum)
-
-if __name__ == "__main__":
-    main()
