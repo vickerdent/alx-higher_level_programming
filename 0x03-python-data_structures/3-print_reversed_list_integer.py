@@ -1,2 +1,6 @@
 #!/usr/bin/python3
-print('"Programming is like building a multilingual puzzle')
+def print_reversed_list_integer(my_list=[]):
+    val = len(my_list) - 1
+    while val >= 0:
+        print("{}".format(my_list[val]))
+        val -= 1

@@ -1,2 +1,10 @@
 #!/usr/bin/python3
-print('"Programming is like building a multilingual puzzle')
+def new_in_list(my_list, idx, element):
+    if idx < 0 or idx >= len(my_list):
+        return my_list
+    new_list = []
+    for val in my_list:
+        new_list.append(val)
+
+    new_list[idx] = element
+    return new_list

@@ -1,2 +1,5 @@
 #!/usr/bin/python3
-print('"Programming is like building a multilingual puzzle')
+a = 89
+b = 10
+a, b = b, a
+print("a={:d} - b={:d}".format(a, b))

@@ -1,2 +1,15 @@
 #!/usr/bin/python3
-print('"Programming is like building a multilingual puzzle')
+def max_integer(my_list=[]):
+    if my_list == []:
+        return None
+    prev = 0
+    curr = 0
+    big = 0
+    for num in my_list:
+        curr = num
+        if curr > prev:
+            big = curr
+            prev = curr
+        else:
+            big = prev
+    return big
