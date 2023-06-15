@@ -8,4 +8,5 @@ def uniq_add(my_list=[]):
                 sum += i
                 uniquers.append(i)
         return sum
-            
+    else:
+        return None
