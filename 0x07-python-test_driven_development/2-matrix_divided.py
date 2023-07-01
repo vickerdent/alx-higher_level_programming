@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Module that contains a function to divide a matrix by a scalar"""
 
-
 def matrix_divided(matrix, div):
     if type(matrix) is not list or len(matrix) == 0:
         raise TypeError("matrix must be a matrix (list of lists)"
