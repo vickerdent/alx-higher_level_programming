@@ -6,6 +6,4 @@ def read_file(filename=""):
 
     if filename:
         with open(filename, "r") as f:
-            reading = f.read()
-        
-        print(reading)
+            print(f.read(), end="")
