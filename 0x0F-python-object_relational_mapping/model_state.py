@@ -1,25 +1,16 @@
 #!/usr/bin/python3
-"""
-Created on Sat Aug  8 09:05:11 2023
+"""Select all states in hbtn_0e_0_usa"""
 
-@author: Victor Abuka
-"""
-from sqlalchemy import Column, Integer, String
+
+from sqlalchemy import Integer, String, Column
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
 
 class State(Base):
-    """
-    state class for use with sqlalchemy inherits from sqlalchemy
-    declarative_base
+    """Class to states table"""
+    __tablename__ = "states"
 
-    Attributes:
-        Base (class)
-    """
-
-    __tablename__ = 'states'
-
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(128), nullable=False)
